@@ -7,6 +7,11 @@ read.menedata <- function(relative2population, relative2greenspace){
   require(tidyverse)
   require(haven)
   require(devtools)
+  require(conflicted)
+  conflict_prefer("select", "dplyr")
+  conflict_prefer("filter", "dplyr")
+  conflict_prefer("mutate", "dplyr")
+  conflict_prefer("summarise", "dplyr")
   
   ##### GENERATING AVERAGE ANNUAL ESTIMATES OF VISITS TO THE 'OUTDOORS' (I.E. GREEN SPACES) BY GOOGLE DISTRICT #####
   

@@ -7,6 +7,11 @@ match.OSgreenspace2google <- function(){
 require(tidyverse)
 require(readxl)
 require(httr)
+  require(conflicted)
+  conflict_prefer("select", "dplyr")
+  conflict_prefer("filter", "dplyr")
+  conflict_prefer("mutate", "dplyr")
+  conflict_prefer("summarise", "dplyr")
 
 ##### READING IN DATA #####
 
