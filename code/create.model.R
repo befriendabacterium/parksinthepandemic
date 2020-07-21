@@ -66,4 +66,4 @@ create.model<-function(){
   RF_model<-randomForest::randomForest(model_data[,-1],model_data$parks_percent_change_from_baseline)
  }
 
-#saveRDS(model,"input_data/RF_model.RDS")
+#saveRDS(RF_model,"input_data/RF_model.RDS")
